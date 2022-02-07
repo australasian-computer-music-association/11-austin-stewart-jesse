@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="dcterms.date" content="2021-01-01" />
-  <title>A Sample Chroma Article and Template Instructions</title>
+  <meta name="dcterms.date" content="2021-12-05" />
+  <title>The Multichannel Monophonic Simulation Tool</title>
   <style>
     html {
       line-height: 1.5;
@@ -164,89 +164,7 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-    }
-    .hanging div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -254,266 +172,526 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">A Sample Chroma Article and Template Instructions</h1>
-<p class="author">Fake Author
- (Fake University)
- (<a href="https://orcid.org/0000-0000-0000-0000">ORCID</a>)
+<h1 class="title">The Multichannel Monophonic Simulation Tool</h1>
+<p class="author">First Author
+ (n/a)
+ (<a href="n/a">ORCID</a>)
 </p>
-<p class="author">Another Phony
- (Phony Studios)
- (<a href="https://orcid.org/0000-0000-0000-0000">ORCID</a>)
+<p class="author">Second Author
+ (n/a)
+ (<a href="n/a">ORCID</a>)
 </p>
-<p class="date">2021-01-01</p>
+<p class="date">2021-12-05</p>
 </header>
 <h1 data-number="1" id="introduction"><span
 class="header-section-number">1</span> Introduction</h1>
-<p>This document is the instructions for using the Markdown submission
-template for Chroma, Journal of the Australasian Computer Music
-Association and doubles as a sample article. The primary submission
-format for our journal is <a
-href="https://daringfireball.net/projects/markdown/">Markdown</a>, a
-light-weight plain text format for writing documents. The advantage of
-Markdown over formats such as <code>.docx</code> is that it can be
-easily and predictably converted to HTML (for viewing on the <a
-href="https://journal.computermusic.org.au">journal website</a>) or an
-attractive PDF (for downloading or printing).</p>
-<p>Markdown lets you specify headings, lists, code segments, images,
-quotations and, of course, divide your text into paragraphs. You don’t
-get to choose the font or size of text—that is defined by our journal
-website and the programs that translates the article manuscript into a
-PDF file. These programs for convertinng the manuscript to HTML and PDF
-use a tool called <a href="https://pandoc.org">pandoc</a>. You can
-install pandoc on your system if you like, and convert your article to
-the standard journal format.</p>
-<p>You don’t need a specific program to edit a Markdown document, they
-are simply plain text files so you can just use notepad (Windows) or
-textedit (MacOS). That said, many people like to use a text editor that
-displays the syntax with nice colours or provides a preview of the
-rendered document in HTML format. I happen to be editing this document
-with <a href="https://vscode.dev">VSCode</a>, which can provide a
-side-by-side HTML preview, or there are online editors such as <a
-href="https://hackmd.io">HackMD</a> or <a
-href="https://dillinger.io">Dillinger</a>.</p>
-<figure>
-<img src="media/markdown-editing.png"
-alt="Editing this Markdown file in VSCode and viewing a preview." />
-<figcaption aria-hidden="true">Editing this Markdown file in VSCode and
-viewing a preview.</figcaption>
-</figure>
-<p>You are free to inspect the <a
-href="https://github.com/cpmpercussion/chroma-template">source code</a>
-for this template, and if you are setting up another journal or
-authoring scholarly articles, the templates and this text have been
-dedicated to the <a
-href="https://github.com/cpmpercussion/chroma-template/blob/main/LICENSE">public
-domain with the Unlicense</a>.</p>
-<h2 data-number="1.1" id="isnt-this-all-very-complicated"><span
-class="header-section-number">1.1</span> Isn’t this all very
-complicated?</h2>
-<p>At this point, you might be wondering why we bother with all this
-Markdown nonsense. After all, haven’t journals gotten by with Microsoft
-Word documents for quite a while now? And what about LaTeX?</p>
-<p>Yes, a typical academic journal accepts articles in Word
-(<code>.docx</code>) formats, but these journals have production editors
-to convert accepted manuscripts into PDF print-ready articles and
-(sometimes) a more accessible web page. These editors are paid with
-subscription fees paid by universities or with publications fees paid by
-authors. <em>Chroma</em> is a fully-open access, scholar-run journal,
-with no subscripton or publication fees so we prefer to use a template
-that provides nice PDF and web versions of manuscripts without
-editing.</p>
-<p>Many journals and conferences (particularly in STEM fields) accept
-articles in LaTeX format which provides a nice PDF output (in fact,
-pandoc uses LaTeX to build our PDF outputs). This can be a solution for
-some authors, but many others authors would run a mile rather than learn
-LaTeX so other solutions are needed.</p>
-<p>There are very few academic journals or conferences with Markdown
-submission templates, but we think that it is a positive move towards
-simpler and lower-cost community-led publishing.</p>
-<h1 data-number="2" id="syntax"><span
-class="header-section-number">2</span> Syntax</h1>
-<p>We cover a brief explanation of the main syntax features below, but
-more in-depth documentation can be found at <a
-href="https://commonmark.org/help/">CommonMark</a>.</p>
-<p>You can write section headings in your article by typing
-<code>#</code>, which corresponds to “Heading 1” in Word or
-<code>\section{}</code> in LaTeX. Sub-sections can be produced with
-<code>##</code> and so on.</p>
-<p>You can use produce emphasised text with underscores
-<code>_italics_</code>, using bold text is possible, but not considered
-good style.</p>
-<p>You can include inline code with backticks, e.g., <code>`code`</code>
-produces <code>code</code>. For a longer code block, start and finish it
-with three backticks (<code>```</code>), e.g.:</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode scheme"><code class="sourceCode scheme"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(bind-func sine:DSP</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">lambda</span> (in time chan dat)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    (<span class="op">*</span> <span class="fl">.1</span> (<span class="kw">cos</span> (<span class="op">*</span> (convert time) <span class="fl">.04</span>)))))</span></code></pre></div>
-<p>You can type the language name straight after the opening backticks
-to enable syntax highlighting.</p>
-<p>You can include hyperlinks like so:
-<code>[link text](https://computermusic.org.au)</code>.</p>
-<p>Footnotes are referenced with a caret symbol (<code>[^1]</code>) (see
-<a href="https://pandoc.org/MANUAL.html#footnotes">pandoc manual</a>)
-for instance:</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Here&#39;s a sentence<span class="ot">[^1]</span>.</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>And here&#39;s the footnote.</span></code></pre></div>
-<p>Which looks like this: Here’s a sentence<a href="#fn1"
-class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a>.</p>
-<h2 data-number="2.1" id="figures-and-tables"><span
-class="header-section-number">2.1</span> Figures and Tables</h2>
-<p>The syntax for including an image is similar but with an exclamation
-point before the first bracket, e.g.:</p>
-<pre><code>![Synthesisers by Charles Martin (Public Domain)](media/synthesisers.jpg)</code></pre>
-<figure>
-<img src="media/synthesisers.jpg"
-alt="Synthesisers by Charles Martin (Public Domain)" />
-<figcaption aria-hidden="true">Synthesisers by Charles Martin (Public
-Domain)</figcaption>
-</figure>
-<p>For images, the text inside the square brackets is interpreted as the
-figure caption.</p>
-<p>Tables follow the markdown table syntax, which uses a lot of
-<code>|</code> and <code>-</code> symbols. The table caption goes after
-a <code>:</code> symbol just after the table. This syntax is specific to
-<a href="https://pandoc.org/MANUAL.html#tables">pandoc</a>.</p>
-<table>
-<caption>A table of musical instrument configurations</caption>
-<thead>
-<tr class="header">
-<th>Instrument</th>
-<th>Keys</th>
-<th>Strings</th>
-<th>Antennae</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Piano</td>
-<td>88</td>
-<td>230</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>Guitar</td>
-<td>0</td>
-<td>6</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>Theremin</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>Trumpet</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-<h1 data-number="3" id="citations"><span
-class="header-section-number">3</span> Citations</h1>
-<p>Citations are supported in Markdown and pandoc (see documentation <a
-href="https://pandoc.org/MANUAL.html#citations">here</a>). In this
-template, the references are listed in <code>references.bib</code> in
-BibTeX format. Citations look like <code>[@foo]</code> where
-<code>foo</code> is the id of the BibTeX entry.</p>
-<p>Here’s one example <span class="citation"
-data-cites="Collins:2008fr">(Collins, 2008)</span>. Some other sources
-include <span class="citation" data-cites="Fiebrink:2007cz">(Fiebrink et
-al., 2007)</span>, and <span class="citation"
-data-cites="Roads:1996ve">(Roads, 1996)</span>. Complex citations are
-possible too <span class="citation"
-data-cites="Worrall:1999kl Collins:2008fr">(e.g., Worrall, 1999, pp.
-33–35; also Collins, 2008, ch. 1)</span>.</p>
-<p>This template includes a style file, <code>apa.csl</code>, to define
-the APA style we use in <em>Chroma</em>.</p>
-<h1 data-number="4" id="header-block"><span
-class="header-section-number">4</span> Header block</h1>
-<p>The strange looking section of text at the start of this file
-contains the metadata which produces the title, authors, abstract and
-some other details for your article. It’s in a format called <a
-href="https://yaml.org">yaml</a> which is supposed to be human-friendly
-but is sometimes tricky to get right. A minimal article example would
-have:</p>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;Article Title&#39;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;2021-01-01&#39;</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">anonymous</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;false&#39;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Author Name</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">affiliation</span><span class="kw">:</span><span class="at"> Author Affiliation</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">city</span><span class="kw">:</span><span class="at"> City</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">country</span><span class="kw">:</span><span class="at"> Country</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">email</span><span class="kw">:</span><span class="at"> author.name@email.com</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">author-header</span><span class="kw">:</span><span class="at"> A. Name (short version of author name)</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="fu">abstract</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    Article abstract</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;references&#39;</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">papersize</span><span class="kw">:</span><span class="at"> a4</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">classoption</span><span class="kw">:</span><span class="at"> 12pt</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="fu">reference-section-title</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;References&#39;</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
-<p>This section is set up this way to work with pandoc which expects the
-YAML metadata to be in this specific format (see the <a
-href="https://pandoc.org/MANUAL.html#extension-yaml_metadata_block">pandoc
-manual</a>).</p>
-<p>Some Markdown preview software knows what to do with the YAML
-metadata, some will ignore it, and some will just print it out as if it
-is normal text, so if it doesn’t appear correctly in your text editor
-that may not be a problem.</p>
-<h1 data-number="5" id="conclusions"><span
-class="header-section-number">5</span> Conclusions</h1>
-<p>Writing articles in Markdown can be a breath of fresh air compared to
-traditional word processors, but there can be some frustrations in terms
-of installing special software (e.g., pandoc) and in configuring the
-templates to create the right kind of outputs.</p>
-<p>Here’s few things we haven’t explained here but might in future:</p>
+<p>Composing works for novel multichannel systems has various
+limitations. Spatial audio predominantly relies on the use of
+stereophony and stereophonic spatial methods that privilege the sweet
+spot listening position. The sweet spot requires accurate positioning of
+loudspeakers in order to realize an unbroken phantom image so that
+listeners can perceive an accurate spatial picture (Kendall 2010;
+Ratcliff 1974). Beyond the technical, there are also a number of social
+and hearing related issues associated with the sweet spot (Composer One
+2020; Composer One and Composer Two 2021; Composer Two 2020). Because of
+these issues, previous work has been done to establish a compositional
+framework, entitled the <em>Multichannel Monophonic Compositional
+Framework</em>, to give composers methods to create non-sweet spot
+oriented spatial music (FIRST AUTHOR and SECOND AUTHOR 2020). The
+results from test cases of this framework have determined that for
+audiences, the framework is effective in achieving its intention. While
+this is the case, composer feedback expressed difficulty in creating
+non-sweet spot music for a novel loudspeaker array when not given the
+opportunity to both work with the loudspeaker array and the space in
+which the loudspeaker array would be situated within.</p>
+<p>Presented in this article is a tool designed to address the issues of
+composers being unable to accurately simulate novel 2D loudspeaker
+arrays and the acoustic space that they are within: the <em>Multichannel
+Monophonic Simulation Tool</em>. This is an application that has been
+designed to allow composers to simulate any array with up to 64
+loudspeakers in a two-dimensional plane while also approximating the
+effect of that array’s acoustic space. The use of this application will
+allow composers to more fully realize their compositional intentions
+when writing for a loudspeaker array that they don’t have access to—in
+particular when it is a novel array.</p>
+<p>This article will begin by establishing the issues present with the
+sweet spot before addressing the ways in which the <em>Multichannel
+Monophonic Compositional Framework</em> seeks to addresses these issues.
+It will then look at composer feedback of the framework to understand
+the need for an application to assist one’s spatial understanding of the
+loudspeaker array and its acoustic space. A review of current spatial
+applications is presented which discusses whether or not the current
+applications that exist could address the issues of composers before
+finally detailing the newly devised <em>Multichannel Monophonic
+Simulation Tool</em>.</p>
+<h1 data-number="2"
+id="issues-with-the-sweet-spot-and-the-multichannel-monophonic-compositional-framework"><span
+class="header-section-number">2</span> Issues with the Sweet Spot and
+the <em>Multichannel Monophonic Compositional Framework</em></h1>
+<p>The sweet spot listening position is reliant on loudspeakers being
+positioned equidistantly in relation to each other and the listener in
+order for a phantom image to be correctly perceived (Kendall 2010). If
+the angle of the loudspeakers is too great, then there is risk of the
+phantom image being broken (Ratcliff 1974). Additionally, even minimal
+movement outside of the sweet spot can have a significant effect on the
+spatial image—a horizontal shift of 1.1 feet in relation to the
+loudspeaker array will cause an arrival time difference of 1 ms between
+the loudspeakers, with the phantom image shifting towards the
+loudspeaker leading in time (Kendall 2010). Beyond these technical
+issues associated with the sweet spot, there are also social and
+hearing-related issues.</p>
+<p>Three spatial audio composers were interviewed and expressed
+discomfort with taking a sweet spot listening position for a variety of
+reasons. Two of the composers interviewed were composers who wrote works
+using the aforementioned <em>Multichannel Monophonic Compositional
+Framework</em> and one was a composer who is hard of hearing and was
+interviewed in relation to their experience with spatial audio and their
+hearing. Some expressed social discomfort and feeling as if you were
+taking a privileged listening position.</p>
+<p>“When I have attended a concert (even when encouraged to sit in the
+middle by the composer themself), I will usually allow others to get to
+the”sweet spot” first before I find my seat. … [This is due to] social
+anxiety. I am sure many young artists would feel when in a room with
+better known or older artists. I am more likely to stick to the sides or
+the back of the performance space because I wish to experience the music
+in anonymity and peace; I do not want to talk to anyone or have my
+experience influenced by their presence, chatter/conversation, or the
+thought that I will need to make conversation with them after” (Spatial
+Audio Composer 1 2021a:1)</p>
+<p>Another composer added: “It would be common for me to sit outside of
+the sweet spot for multiple reasons, and I would definitely feel like
+I’m taking a privileged position by sitting in the middle. This means
+I’ve listened to multiple performances from outside of an octophonic
+array, as there were too many people to fit within the ring. During
+these works, I would end up having an experience of the work that most
+likely didn’t quite equate to what the composer intended in terms of
+spatial movement… I don’t want to take that privileged spot from someone
+else, especially if they have more investment in the work than I do”
+(Spatial Audio Composer 3 2021c:3, 2021d:3).</p>
+<p>Beyond these social issues, another composer expressed issue with how
+the sweet spot relies on listeners not being hard of hearing or
+d/Deaf.</p>
+<p>“My reluctance to move nearer the sweet spot does at least partially
+stem from a level of discomfort with approaching a professional during
+multichannel listening. There are two reasons for this. First, their
+reputation and sense of authority… makes it difficult to relate to them
+in a casual setting… Second, my hearing difficulties do make it hard to
+risk discussion. What if they hear some-thing I don’t? What if they ask
+me about this and I couldn’t hear anything? It is much less risky if I
+just ensure I have a different listening experience” (Spatial Audio
+Composer 2 2021b:2).</p>
+<p>These three composer responses demonstrate that beyond the technical
+issues associated with the sweet spot, there are also social barriers
+and barriers of hearing. It is upon these collective barriers that the
+<em>Multichannel Monophonic Compositional Framework</em> was
+conceived.</p>
+<p>The <em>Multichannel Monophonic Compositional Framework</em>,
+developed by the first author, intends to allow for the creation of
+spatial audio experiences that are equally intended from multiple
+positions regardless of where you are situated within the array. It is
+intended for use with channel-based loudspeaker arrays <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>,
+where loudspeakers can be addressed individually and discretely. The
+framework was devised through a review of spatial compositional
+strategies, where the methods that relied on stereophonic spatialisation
+were removed. This resulted in the inclusion of the spatial methods of
+spatial allusion (Barrett 2002), spatial movement (Baalman 2010), timbre
+spatialisation (Normandeau 2009), temporal nature of space (Barrett
+2002; Wishart 1985), localization characteristics of varying types of
+sonic material (Barrett 2002; Blauert 1996; Hartmann 1983; Rakerd and
+Hartmann 1986), and loudspeaker system design and system selection
+(FIRST AUTHOR and SECOND AUTHOR 2021). This framework was then sent to
+seven composers to write works for a novel array that didn’t have a
+sweet spot and was comprised of 12 loudspeakers. The composers were not
+told where the loudspeakers would be positioned and only told the number
+of speakers, as to make sure that that didn’t attempt any stereophonic
+spatial movement. These were there presented in the installation
+<em>Multiple Monophony</em> (FIRST AUTHOR 2021b). Additionally the first
+author also used the framework for the installation <em>four swinging
+speakers</em> (FIRST AUTHOR 2021b). Audience surveys were collected from
+both events and composer surveys were collected from <em>Multiple
+Monophony</em> (a composer survey wasn’t collected from four swinging
+speakers as the work was by the first author).</p>
+<p>During the time these works were exhibited, the audience was surveyed
+to determine the effectiveness of the framework from their perspective.
+Relevant respondents from the <em>Multiple Monophony</em> and <em>four
+swinging speakers</em> audience surveys were respondents who had
+attended 6+ spatial concerts/events/installations in the preceding two
+years and who identified the regularity of their attendance at spatial
+concerts/events/installations as either ‘semi-regularly’ or ‘as much as
+possible’. They also listened to the installation from multiple
+positions and had said that in previous spatial
+concerts/events/installations they perceived that they had had ‘an
+inferior or less intended spatial experience because of where [they]
+were positioned in the room’. This criterion determined firstly that
+these relevant responders are well-versed and engaged with spatial audio
+and can make comparisons to other spatial audio events. They also
+listened from multiple positions so can determine whether or not there
+was a listening position they perceived as more spatially interesting.
+Lastly, having previously had an ‘inferior or less-intended’ spatial
+experience because of where they were in the room means that they can
+compare that experience to their experience in these two
+installations.</p>
+<p>In the case of <em>Multiple Monophony</em> and <em>four swinging
+speakers</em>, based on the responses from the relevant responders, the
+framework could be deemed successful in creating spatially aesthetically
+non-sweet spot oriented spatial experiences that are seen as equally
+interesting from multiple positions in the room. Additionally, there
+weren’t any cases where the audience determined they had had an inferior
+listening experience because of their listening position. The survey
+responses have been further elaborated in the following citation (FIRST
+AUTHOR and SECOND AUTHOR 2020).</p>
+<p>From an audience perspective in the test uses of the framework, it
+has been successful at removing the sweet spot without losing spatial
+interest. While this is the case, it doesn’t address how the composers
+felt about the compositional process and how their works translated to
+the novel loudspeaker array.</p>
+<h2 data-number="2.1" id="composer-surveys-of-the-framework"><span
+class="header-section-number">2.1</span> Composer Surveys of the
+Framework</h2>
+<p>After the completion of the installation of <em>Multiple
+Monophony</em> the seven composers were sent five recordings (recorded
+in B-format and decoded to binaural) of their works from different
+positions within the room and a survey asking them to respond to their
+experience composing with the framework and their impression of the end
+result of their work, as heard through the recordings.</p>
+<p>A majority of the composers felt the recordings of their works were
+representative of their spatial intentions, though those who didn’t feel
+that way, felt that way due to a lack of anticipation of the acoustics
+of the space. A majority of the composers also found their works
+spatially interesting, that all the recordings were equally
+representative of their spatial intentions., and that the spatial
+aesthetic was equally interesting from multiple positions. The sound of
+the room had quite an impact on their work, with 4/7 composers
+commenting on the effect it had and the difference between the resultant
+work and their intended result. Some composers also expressed it was
+difficult imagining what the end result would be.</p>
+<p>While these responses suggest that composers on average found the
+recordings of <em>Multiple Monophony</em> showed the works as
+aesthetically spatially interesting from multiple positions and that the
+works were representative of their spatial intentions, we can also see
+how some composers expressed difficulty with the compositional situation
+they were placed in. Being unable to work with the array and being
+unable to properly understand the acoustic space of the installation
+resulted in the majority of composers commenting that the resultant work
+was different from what they anticipated. Even if the composers were
+aware of the array configuration, the current spatial simulation
+applications available wouldn’t have appropriately helped them simulate
+the array used in <em>Multiple Monophony</em>. This will be further
+addressed in the next section.</p>
+<p>While, from a listener’ and composer’s perspective, the
+<em>Multichannel Monophonic Compositional Framework</em> is successful
+at creating spatially aesthetically non-sweet spot oriented spatial
+experiences that are seen as equally interesting from multiple positions
+in the room, we can also see that the compositional situation that the
+composers found themselves in did not allow them to create a work that
+they fully anticipated. Because of this, technology must be created to
+address this issue.</p>
+<h1 data-number="3" id="multichannel-monophonic-simulation-tool"><span
+class="header-section-number">3</span> <em>Multichannel Monophonic
+Simulation Tool</em></h1>
+<p>The <em>Multichannel Monophonic Simulation Tool</em> is an
+application that has been devised in order to address the issues of not
+being able to work with a loudspeaker array when composing and not being
+able to work with the array within the space it will be installed.</p>
+<p>There are various reasons as to why an individual may not be able to
+write with a multichannel array in the intended performance space. The
+array may only be set up for a small period of time, limiting the access
+individuals have to it. If the array is within a shared space, such as a
+university, it may also be in high demand. Additionally, individuals may
+not have space or the economic capital required to set up the array to
+work on within their home or personal studio. The reasons why someone
+may not have access to an array are also not limited to these. To combat
+this limited access to multichannel arrays, a variety of applications
+have been devised so that individuals may simulate multichannel systems
+for stereo playback. This allows individuals to write for a system they
+may have limited or no access to before having a work performed by that
+system, while still having a representative understanding of how the
+work will sound.</p>
+<p>While this is the case, the applications currently devised have
+limitations either of price, technical knowledge, or application
+features when trying to simulate novel 2D arrays, such as the one used
+for <em>Multiple Monophony</em>.</p>
+<p>One must review the applications that currently exist to understand
+what needs to be devised to address the issues composers had within
+<em>Multiple Monophony</em> of not being able to simulate the array and
+acoustic space.</p>
+<h2 data-number="3.1" id="spatial-application-review"><span
+class="header-section-number">3.1</span> Spatial Application Review</h2>
+<p>There are various applications that have been developed so one can
+simulate a multichannel system over headphones or stereo speakers. Based
+off the issues presented by the composers and issues of price, technical
+knowledge, and application features, an ideal application would meet the
+following criteria:</p>
 <ul>
-<li>lists (just like this one)</li>
-<li>figure and section references</li>
-<li>including LaTeX maths</li>
-<li>how to convert from docx to markdown</li>
+<li>Be cheap/free</li>
+<li>Allow for a high channel number for custom channel-based arrays</li>
+<li>Allow the user to change listening position within the array</li>
+<li>Relatively easy to use</li>
+<li>Allows you to simulate the reverb of an acoustic space (has an IR
+reverb)</li>
 </ul>
-<p>This is a living document and it is hoped that any authors (such as
-you!) who try it out might provide feedback (e.g., you could make an <a
-href="https://github.com/cpmpercussion/chroma-template/issues">issue on
-the template repository</a>) and help us to improve this template for
-future authors and potentially other publications.</p>
-<h1 class="unnumbered" id="bibliography">References</h1>
-<div id="refs" class="references csl-bib-body hanging-indent"
-data-line-spacing="2" role="doc-bibliography">
-<div id="ref-Collins:2008fr" class="csl-entry" role="doc-biblioentry">
-Collins, K. (2008). <em>Game sound</em>. MIT Press.
-</div>
-<div id="ref-Fiebrink:2007cz" class="csl-entry" role="doc-biblioentry">
-Fiebrink, R., Wang, G., &amp; Cook, P. R. (2007). Don’t forget the
-laptop: Using native input capabilities for expressive musical control.
-<em>Proceedings of the International Conference on New Interfaces for
-Musical Expression</em>, 164–167.
-</div>
-<div id="ref-Roads:1996ve" class="csl-entry" role="doc-biblioentry">
-Roads, C. (1996). Early electronic music instruments: Time line
-1899-1950. <em>Computer Music Journal</em>, <em>20</em>(3), 20–23.
-</div>
-<div id="ref-Worrall:1999kl" class="csl-entry" role="doc-biblioentry">
-Worrall, D. (1999). Cyberspace and sound. <em>Proceedings of the
-Australasian Computer Music Conference</em>.
-</div>
-</div>
+<p>An application that fits these criteria would have allowed the
+composers for Multiple Monophony to simulate the acoustic space and
+loudspeaker array layout while not costing them much and being
+relatively easy to use. It would have also allowed them to simulate the
+work from multiple listening positions to see if any listening positions
+felt inferior. The following review will determine if such an
+application exists and if not, where the gaps in the field are.</p>
+<p>There are a variety of applications that have been devised to decode
+B-Format audio to stereo or binaural for some fixed configurations.
+These applications range in price and include Harpex-X (€298) (Harpex
+n.d.), ATK (free) (Ambisonic Toolkit n.d.), Soundfield by RØDE (free)
+(RØDE n.d.), and Envelop 4 Live (free) (Envelop n.d.). In addition to
+varying in price, these applications also vary in use, with Envelop 4
+Live only being able to be used in Ableton Live. Similarly, the ATK
+suite can only be used in Reaper or SuperCollider.</p>
+<p>These plugins are not and exhaustive list of B-Format decoders, but
+illustrate a range of price and usage contexts to provide an
+understanding of the field. In the case of all of these B-Format
+decoders, they only decode to a set of fixed arrays and only do so for a
+fixed listening position (the sweet spot). Unfortunately, these plugins
+would not be useful when trying to compose for an array outside of the
+arrays that these plugins support, and as they are B-Format decoders,
+they would not be much assistance in channel-based compositional
+approaches, such as the ones the Multichannel Monophonic Compositional
+Framework are based on. Looking beyond B-Format decoders, there are
+various applications that allow for more extended spatialisation
+simulation.</p>
+<p>IEM Suite’s AllRADecoder (IEM Plugin Suite n.d.) is a free plugin
+that allows a user to decode B-Format audio to any custom designed
+array. The user needs to enter the co-ordinates of the various
+loudspeakers within the novel array, and it will decode the B-Format
+audio for that array. This plugin has no barrier of cost, however, it
+does not allow one to try channel based approaches. It also centres the
+listening position around a sweet spot. It is somewhat easy to use, but
+does not allow for the simulation of the reverb of an acoustic
+space.</p>
+<p>Spat Revolution (USD $399) and Spat Revolution Ultimate (USD $1,995)
+(Flux Audio n.d.) allow for custom arrays for channel based, binaural,
+and ambisonic systems. The cheaper Spat Revolution allows for the
+simulation of 12 channel custom arrays, with Spat Revolution Ultimate
+allowing for the simulation of 64 channel custom arrays. With both
+applications, a user can vary the listening position. While Ultimate
+allows for creation of custom arrays with a large number of channels, it
+is incredibly cost prohibitive. It is not relatively easy to use and
+does not allow for the simulation of the reverb of an acoustic
+space.</p>
+<p>New Audio Technology’s Spatial Audio Designer (€389) (New Audio
+Technology n.d.) allows for custom arrays and channel based systems. The
+online and user documentation is limited, but it suggests one can use up
+to 330 outputs for custom systems, but does not suggest you can simulate
+from multiple listening positions. With Spatial Audio Designer, there is
+a relatively large cost barrier and is not relatively easy to use. It
+also does not allow for the simulation of the reverb of an acoustic
+space and doesn’t allow for simulation from multiple listening
+positions.</p>
+<p>The Spat MaxMSP Library (free) (IRCAM Forum n.d.) is a library of
+MaxMSP externals designed specifically for spatialization use cases. The
+externals can be used by users in the creation of MaxMSP patches that
+can fulfil their desired spatial use case. Using them to create
+something to simulate a novel array from multiple listening positions
+would be possible, especially if used in conjunction with other MaxMSP
+external libraries such as the CICM HOA Library (HOA Library n.d.).
+These libraries allow for all the desired use cases except for being
+relatively easy to use. The libraries require a lot of technical
+knowledge of MaxMSP to create the desired patch to fulfil the use
+case.</p>
+<p>In the applications reviewed, together, they tick all of the boxes
+desired within an application based on the criteria determined earlier
+in this section:</p>
+<ul>
+<li>Be cheap/free</li>
+<li>Allow for a high channel number for custom channel based arrays</li>
+<li>Allow the user to change listening position within the array</li>
+<li>Relatively easy to use</li>
+<li>Allows you to simulate the reverb of an acoustic space (has an IR
+reverb)</li>
+</ul>
+<figure>
+<img src="figure001.jpg"
+alt="comparison table of various spatial simulation applications" />
+<figcaption aria-hidden="true">comparison table of various spatial
+simulation applications</figcaption>
+</figure>
+<p>However, as the above table demonstrates, there is no application
+from the applications reviewed that achieves all of the desired
+criteria. This this shows a need for the development of an application
+that <em>does</em> achieve all of the desired criteria.</p>
+<h2 data-number="3.2" id="the-tool"><span
+class="header-section-number">3.2</span> The Tool</h2>
+<p>In response to the spatial simulation application review completed
+above, the <em>Multichannel Monophonic Simulation Tool</em> was
+created.</p>
+<p>The tool developed (pictured below) is a standalone application,
+created using the Spat and CICM HOA MaxMSP external libraries (HOA
+Library n.d.; IRCAM Forum n.d.). It allows for the creation of custom
+channel based arrays for up to 64 loudspeakers, users can listen from
+multiple positions, it is relatively easy to use, and users can load an
+impulse response to simulate the reverb of an acoustic space.
+Additionally, there are Windows and MacOS versions of the application
+available for free download as standalone applications (as opposed to
+MaxMSP patches) that can be used regardless of whether you have MaxMSP
+installed or not (FIRST AUTHOR n.d.).</p>
+<figure>
+<img src="figure002.png" alt="screengrab of the application" />
+<figcaption aria-hidden="true">screengrab of the
+application</figcaption>
+</figure>
+<h3 data-number="3.2.1" id="how-it-works"><span
+class="header-section-number">3.2.1</span> How It Works</h3>
+<p>The application functions by using the GUI to add loudspeakers to
+create the 2D array that they wish to simulate. These loudspeakers are
+then numbered as to the speaker they correspond to.</p>
+<figure>
+<img src="figure003.jpg" alt="signal flow chart of the application" />
+<figcaption aria-hidden="true">signal flow chart of the
+application</figcaption>
+</figure>
+<p>To send audio to these speakers, the user needs to use an audio
+routing application, such as <em>Soundflower</em>, as their DAW output
+device to send audio from their DAW to the application, with the output
+of the audio channel of their DAW corresponding with the speaker number
+in the simulation tool. The listening position is the centre position of
+the GUI. Users can group the speakers together and move the group around
+the GUI, in effect, changing the listening position. Users can also
+rotate the speaker grouping to the direction the listener is facing from
+the listening position. In the top right corner, users have the ability
+to add an impulse response file to change the acoustic space that is
+simulated within the tool. By default, it does not simulate an acoustic
+space. The dry/wet of the impulse response can also be adjusted.</p>
+<figure>
+<img src="figure004.png"
+alt="screengrab of the impulse response section of the application" />
+<figcaption aria-hidden="true">screengrab of the impulse response
+section of the application</figcaption>
+</figure>
+<p>In regards to the tool’s limitations, it doesn’t allow you to
+specifically position the loudspeakers, but rather approximate their
+position by clicking and dragging them into position. What this feature
+loses in specificity makes up for in ease of use. The application also
+only allows binaural output. This is useful for simulating the novel
+systems created in a solo compositional context, but it doesn’t allow
+for simulation of for larger multichannel systems to quickly translate
+the novel array devised within the tool to a standardised multichannel
+system.</p>
+<h3 data-number="3.2.2" id="application-of-the-tool"><span
+class="header-section-number">3.2.2</span> Application of the Tool</h3>
+<p>In the case of <em>Multiple Monophony</em>, the <em>Multichannel
+Monophonic Simulation Tool</em> would have allowed composers to simulate
+the novel 2D loudspeaker array that they were composing for. It also
+would have allowed them to simulate the acoustic space of the
+installation. Beyond <em>Multiple Monophony</em>, the tool will allow
+users to simulate any 2D channel-based loudspeaker configuration of
+their choosing of up to 64 loudspeakers. This tool increases the ease of
+writing for and organising spatial audio events/concerts/installations
+for works for novel 2D loudspeaker arrays. The ease of customization
+allows for more certainty when writing for unconventional novel
+arrays.</p>
+<h1 data-number="4" id="conclusion"><span
+class="header-section-number">4</span> Conclusion</h1>
+<p>The sweet spot and sweet spot oriented spatial music bring a
+complicated mix of exclusion, founded on technical, social, and
+hearing-related issues. While attempts such as <em>Multiple
+Monophony</em> and the <em>Multichannel Monophonic Compositional
+Framework</em> have been made by the first author to break down the
+sweet spot listening position, they ultimately resulted in a situation
+where composers were unable to fully understand the implications of
+their compositional decisions in regard to the novel loudspeaker array
+and the acoustic space the array is situated within.</p>
+<p>The subsequent spatial application review has led to the
+<em>Multichannel Monophonic Simulation Tool</em> which addresses the
+issues found through the composer surveys after <em>Multiple
+Monophony</em>. The application itself not only allows users to simulate
+any 2D channel-based loudspeaker array up to 64 loudspeakers and the
+acoustic space of which it is in, but it also allows users to change the
+listening position within the array, is relatively easy to use, and is
+also free. Through making the process easier to write for custom
+channel-based arrays, the tool also gives composers more certainty when
+choosing to work with a non-sweet spot oriented system. This certainty
+reduces the difficulty in working with non-sweet spot oriented
+channel-based arrays, and in turn, removes barriers associated with
+non-sweet spot oriented spatial music. This application is one more step
+towards reducing the technical, social, and hearing-related exclusion
+caused by the sweet spot.</p>
+<h1 data-number="5" id="references"><span
+class="header-section-number">5</span> References</h1>
+<p>Ambisonic Toolkit. n.d. “The Ambisonic Toolkit.” Retrieved September
+7, 2021i (https://www.ambisonictoolkit.net/).</p>
+<p>FIRST AUTHOR. 2021a. “Four Swinging Speakers.” YouTube. Retrieved
+September 4, 2021 (https://www.youtube.com/watch?v=K80xXR9qJto).</p>
+<p>FIRST AUTHOR. 2021b. “Multiple Monophony.” YouTube. Retrieved
+September 4, 2021 (https://www.youtube.com/watch?v=dEspBzyMUek).</p>
+<p>FIRST AUTHOR. n.d. “Software - Multichannel Monophonic Simulation
+Tool.” FIRST AUTHOR t. Retrieved September 7, 2021
+(https://www.FIRSTAUTHOR.com/software).</p>
+<p>FIRST AUTHOR, and SECOND AUTHOR. 2020.“Multiple Monophony and the
+Multichannel Monophonic Framework.” Presented at the Australasian
+Computer Music Conference, Online.</p>
+<p>FIRST AUTHOR, and SECOND AUTHOR . 2021. “Spatial System Design as a
+Spatio-Compositional Strategy.” Santiago, Chile (Online).</p>
+<p>Baalman, Marije A. J. 2010. “Spatial Composition Techniques and Sound
+Spatialisation Technologies.” Organised Sound 15(03):209–18. doi:
+10.1017/S1355771810000245.</p>
+<p>Barrett, Natasha. 2002. “Spatio-Musical Composition Strategies.”
+Organised Sound 7(3):313–23. doi: 10.1017/S1355771802003114.</p>
+<p>Blauert, Jens. 1996. Spatial Hearing:: The Psychophysics of Human
+Sound Localization. 3rd ed. Cambridge, Massachusetts: The MIT Press.</p>
+<p>Composer One. 2020. “Interview by FIRST AUTHOR.”</p>
+<p>Composer One, and Composer Two. 2021. “Interview by FIRST
+AUTHOR.”</p>
+<p>Composer Two. 2020. “Interview by FIRST AUTHOR.”</p>
+<p>Envelop. n.d. “Software Tools.” Retrieved September 7, 2021d
+(https://www.envelop.us/software).</p>
+<p>Flux Audio. n.d. “Spat Revolution.” Retrieved September 7, 2021g
+(https://www.flux.audio/project/spat-revolution/).</p>
+<p>Harpex. n.d. “Harpex.” Retrieved September 7, 2021b
+(https://harpex.net/).</p>
+<p>Hartmann, William M. 1983. “Localization of Sound in Rooms.” Journal
+of the Acoustical Society of America 74(5):337–63.</p>
+<p>HOA Library. n.d. “HoaLibrary.” Retrieved September 7, 2021c
+(http://hoalibrary.mshparisnord.fr/en).</p>
+<p>IEM Plugin Suite. n.d. “AllRADecoder Guide.” Retrieved September 7,
+2021a (https://plugins.iem.at/docs/allradecoder/).</p>
+<p>IRCAM Forum. n.d. “Spat.” Retrieved September 7, 2021f
+(https://forum.ircam.fr/projects/detail/spat/).</p>
+<p>Kendall, Gary S. 2010. “Spatial Perception and Cognition in
+Multichannel Audio for Electroacoustic Music.” Organised Sound
+15(03):228–38. doi: 10.1017/S1355771810000336.</p>
+<p>New Audio Technology. n.d. “Spatial Audio Designer.” Retrieved
+September 7, 2021h
+(https://newaudiotechnology.com/products/spatial-audio-designer/).</p>
+<p>Normandeau, Robert. 2009. “Timbre Spatialisation: The Medium Is the
+Space.” Organised Sound 14(3):277–85. doi:
+10.1017/S1355771809990094.</p>
+<p>Rakerd, Brad, and William M. Hartmann. 1986. “Localization of Sound
+in Rooms, III: Onset and Duration Effects.” The Journal of the
+Acoustical Society of America 80(6):1695–1706.</p>
+<p>Ratcliff, P. A. 1974. Properties of Hearing Related to Quadraphonic
+Reproduction. BBC RD 1974/38. BBC Research Department No. 38.</p>
+<p>RØDE. n.d. “SoundField by RØDE Plugin.” Retrieved September 7, 2021e
+(https://en.rode.com/soundfieldplugin).</p>
+<p>Spatial Audio Composer 1. 2021a. “Interview with Spatial Audio
+Composer 1 by FIRST AUTHOR.”</p>
+<p>Spatial Audio Composer 2. 2021b. “Interview with Spatial Audio
+Composer 2 by FIRST AUTHOR.”</p>
+<p>Spatial Audio Composer 3. 2021c. “Interview with Spatial Audio
+Composer 3 by FIRST AUTHOR .”</p>
+<p>Spatial Audio Composer 3. 2021d. “Interview with Spatial Audio
+Composer 3 by FIRST AUTHOR.”</p>
+<p>Wishart, Trevor. 1985. On Sonic Art. Harwood Academic Publishers.</p>
 <section class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>And here’s the footnote.<a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>A channel-based array is one that
+lets you address the loudspeakers individually by sending material to
+specific loudspeakers. For example, 5.1 would be considered a
+channel-based array, however, if you were decoding a B-Format recording
+to 5.1, it would not allow for channel based spatialisation.
+Additionally, systems such as wave field synthesis are not channel
+based.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </body>
