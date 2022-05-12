@@ -158,6 +158,7 @@ The subsequent spatial application review has led to the *Multichannel Monophoni
 
 # References
 
+\indent
 *AllRADecoder* (1.13.0). (2018). [Computer software]. IEM. <https://plugins.iem.at/docs/allradecoder/>
 
 Austin-Stewart, J. (2020a). *Four Swinging Speakers*. <https://www.youtube.com/watch?v=K80xXR9qJto>
