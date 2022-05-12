@@ -1,5 +1,5 @@
 DOC_NAME=article.md
-OUT_NAME=rendered-article
+OUT_NAME=11-austin-stewart-jesse
 REFS_FILE=references.bib
 CSL_FILE=templates/apa.csl
 LATEX_TEMPLATE=templates/chroma-article.tex
