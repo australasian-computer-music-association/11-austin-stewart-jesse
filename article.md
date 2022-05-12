@@ -20,8 +20,9 @@ bibliography: 'references'
 papersize: a4
 classoption: 12pt
 reference-section-title: 'References'
+header-includes: |
+    \hyphenation{AllRADe-coder}
 ---
-
 
 # Introduction
 
@@ -106,7 +107,7 @@ The Spat MaxMSP Library (free) (Spat~, 1990) is a library of MaxMSP externals de
 
 In the applications reviewed, together, they tick all of the boxes desired within an application based on the criteria determined earlier in this section.
 
-|                           | B-format Decoders | AllRADecoder | Spat Revolution/Ultimate | Spatial Audio Designer | Spat MaxMSP Library etc |
+|                           | B-format Decoders | \hspace{0pt} AllRADecoder | Spat Revolution/Ultimate | Spatial Audio Designer | Spat MaxMSP Library etc |
 |---------------------------|-------------------|--------------|--------------------------|------------------------|-------------------------|
 | Cheap/Free                | Yes               | Yes          | No                       | No                     | Yes                     |
 | High channel number       | No                | Yes          | Yes                      | Yes                    | Yes                     |
@@ -157,48 +158,48 @@ The subsequent spatial application review has led to the *Multichannel Monophoni
 
 # References
 
-*AllRADecoder* (1.13.0). (2018). [Computer software]. IEM. https://plugins.iem.at/docs/allradecoder/
+*AllRADecoder* (1.13.0). (2018). [Computer software]. IEM. <https://plugins.iem.at/docs/allradecoder/>
 
-Austin-Stewart, J. (2020a). *Four Swinging Speakers*. https://www.youtube.com/watch?v=K80xXR9qJto
+Austin-Stewart, J. (2020a). *Four Swinging Speakers*. <https://www.youtube.com/watch?v=K80xXR9qJto>
 
-Austin-Stewart, J. (2020b). *Multiple Monophony*. https://www.youtube.com/watch?v=dEspBzyMUek
+Austin-Stewart, J. (2020b). *Multiple Monophony*. <https://www.youtube.com/watch?v=dEspBzyMUek>
 
-Austin-Stewart, J. (2021). *Multichannel Monophonic Simulation Tool* (1.0.) [Computer software]. https://www.jesseaustinstewart.com/software
+Austin-Stewart, J. (2021). *Multichannel Monophonic Simulation Tool* (1.0.) [Computer software]. <https://www.jesseaustinstewart.com/software>
 
-Austin-Stewart, J., & Johnson, B. (2020). *Multiple Monophony and the Multichannel Monophonic Framework* [Conference presentation]. Australasian Computer Music Conference, Online. https://www.youtube.com/watch?v=Z9eg3Tb3dV0
+Austin-Stewart, J., & Johnson, B. (2020). *Multiple Monophony and the Multichannel Monophonic Framework* [Conference presentation]. Australasian Computer Music Conference, Online. <https://www.youtube.com/watch?v=Z9eg3Tb3dV0>
 
 Austin-Stewart, J., & Johnson, B. (2021). *Spatial System Design as a Spatio-Compositional Strategy* [Conference presentation]. International Computer Music Conference 2020/21, Santiago, Chile (Online).
 
-Baalman, M. A. J. (2010). Spatial Composition Techniques and Sound Spatialisation Technologies. *Organised Sound*, 15(03), 209–218. https://doi.org/10.1017/S1355771810000245
+Baalman, M. A. J. (2010). Spatial Composition Techniques and Sound Spatialisation Technologies. *Organised Sound*, 15(03), 209–218. <https://doi.org/10.1017/S1355771810000245>
 
-Barrett, N. (2002). Spatio-musical composition strategies. *Organised Sound*, 7(3), 313–323. https://doi.org/10.1017/S1355771802003114
+Barrett, N. (2002). Spatio-musical composition strategies. *Organised Sound*, 7(3), 313–323. <https://doi.org/10.1017/S1355771802003114>
 
 Blauert, J. (1996). *Spatial Hearing: The Psychophysics of Human Sound Localization* (3rd ed.). The MIT Press.
 
-*Envelop 4 Live* (11.0.1). (2018). [Computer software]. Envelop. https://www.envelop.us/software
+*Envelop 4 Live* (11.0.1). (2018). [Computer software]. Envelop. <https://www.envelop.us/software>
 
-*Harpex-B* (1.6). (2011). [Computer software]. Harpex. https://harpex.net/
+*Harpex-B* (1.6). (2011). [Computer software]. Harpex. <https://harpex.net/>
 
 Hartmann, W. M. (1983). Localization of Sound in Rooms. *Journal of the Acoustical Society of America*, 74(5), 337–363.
 
-*HoaLibrary* (2.2). (2012). [Computer software]. HOA Library. http://hoalibrary.mshparisnord.fr/en
+*HoaLibrary* (2.2). (2012). [Computer software]. HOA Library. <http://hoalibrary.mshparisnord.fr/en>
 
-Kendall, G. S. (2010). Spatial Perception and Cognition in Multichannel Audio for Electroacoustic Music. *Organised Sound*, 15(03), 228–238. https://doi.org/10.1017/S1355771810000336
+Kendall, G. S. (2010). Spatial Perception and Cognition in Multichannel Audio for Electroacoustic Music. *Organised Sound*, 15(03), 228–238. <https://doi.org/10.1017/S1355771810000336>
 
-Normandeau, R. (2009). Timbre Spatialisation: The medium is the space. *Organised Sound*, 14(3), 277–285. https://doi.org/10.1017/S1355771809990094
+Normandeau, R. (2009). Timbre Spatialisation: The medium is the space. *Organised Sound*, 14(3), 277–285. <https://doi.org/10.1017/S1355771809990094>
 
 Rakerd, B., & Hartmann, W. M. (1986). Localization of Sound in Rooms, III: Onset and Duration Effects. *The Journal of the Acoustical Society of America*, 80(6), 1695–1706.
 
 Ratcliff, P. A. (1974). *Properties of Hearing Related to Quadraphonic Reproduction* (BBC RD 1974/38; pp. 1–19). BBC Research Department No. 38.
 
-*SoundField by RØDE* (1.0.2). (2018). [Computer software]. RØDE. https://en.rode.com/soundfieldplugin
+*SoundField by RØDE* (1.0.2). (2018). [Computer software]. RØDE. <https://en.rode.com/soundfieldplugin>
 
-*Spat Revolution* (20.12). (2019). [Computer software]. Flux Audio. https://www.flux.audio/project/spat-revolution/
+*Spat Revolution* (20.12). (2019). [Computer software]. Flux Audio. <https://www.flux.audio/project/spat-revolution/>
 
-*Spat~* (5.x). (1990). [Computer software]. IRCAM. https://forum.ircam.fr/projects/detail/spat/
+*Spat~* (5.x). (1990). [Computer software]. IRCAM. <https://forum.ircam.fr/projects/detail/spat/>
 
-*Spatial Audio Designer* (3.0). (2013). [Computer software]. New Audio Technology. https://newaudiotechnology.com/products/spatial-audio-designer/
+*Spatial Audio Designer* (3.0). (2013). [Computer software]. New Audio Technology. <https://newaudiotechnology.com/products/spatial-audio-designer/>
 
-*The Ambisonic Toolkit* (1.0. beta 10). (2015). [Computer software]. Ambisonic Toolkit. https://www.ambisonictoolkit.net/
+*The Ambisonic Toolkit* (1.0. beta 10). (2015). [Computer software]. Ambisonic Toolkit. <https://www.ambisonictoolkit.net/>
 
 Wishart, T. (1985). *On Sonic Art*. Harwood Academic Publishers.
