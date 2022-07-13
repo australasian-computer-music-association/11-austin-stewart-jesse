@@ -1,5 +1,5 @@
 DOC_NAME=article.md
-OUT_NAME=11-austin-stewart-jesse
+OUT_NAME=11-austin-stewart-multichannel
 REFS_FILE=references.bib
 CSL_FILE=templates/apa.csl
 LATEX_TEMPLATE=templates/chroma-article.tex

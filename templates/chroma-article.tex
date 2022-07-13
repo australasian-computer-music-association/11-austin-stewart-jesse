@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \pagenumbering{arabic}
 \usepackage{amssymb,amsmath}
+\usepackage{lastpage}
 
 % Font setup
 \usepackage{libertine}
@@ -51,32 +52,8 @@ $if(natbib)$
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
 $endif$
 
-% Tables (from default pandoc template)
-$if(tables)$
 \usepackage{longtable,booktabs,array}
-$if(multirow)$
-\usepackage{multirow}
-$endif$
 \usepackage{calc} % for calculating minipage widths
-$if(beamer)$
-\usepackage{caption}
-% Make caption package work with longtable
-\makeatletter
-\def\fnum@table{\tablename~\thetable}
-\makeatother
-$else$
-% Correct order of tables after \paragraph or \subparagraph
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
-\makeatother
-% Allow footnotes in longtable head/foot
-\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
-\makesavenoteenv{longtable}
-$endif$
-$endif$
-
-
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -119,6 +96,33 @@ $if(csl-refs)$
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 $endif$
 
+% License Footnote
+\newcommand\extrafootertext[1]{%
+    \bgroup
+    \renewcommand\thefootnote{\fnsymbol{footnote}}%
+    \renewcommand\thempfootnote{\fnsymbol{mpfootnote}}%
+    \footnotetext[0]{#1}%
+    \egroup
+}
+\newcommand{\journalname}{Chroma: Journal of the ACMA}
+\newcommand{\licensedetails}{\hspace{-2\parindent} Licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0). Copyright remains with the author(s).}
+\newcommand{\shortmetadata}{Chroma \textbf{$year$}, $volume$($number$), $article-no$}
+\AtBeginDocument{
+    \fancypagestyle{firstpagestyle}{
+      \fancyhf{}
+      \fancyfoot[L]{\sffamily\footnotesize \shortmetadata}%
+      \fancyfoot[C]{\sffamily\footnotesize \thepage\ of \pageref{LastPage}}
+      \renewcommand{\headrulewidth}{0pt}
+    }
+    \fancyfoot{}
+    \fancyfoot[L]{\sffamily\footnotesize\shortmetadata}%
+    \fancyfoot[C]{\sffamily\footnotesize\thepage\ of \pageref{LastPage}}
+    % \renewcommand{\headrulewidth}{0.4pt}
+    \extrafootertext{\licensedetails}
+}
+
+
+
 $for(header-includes)$
 $header-includes$
 $endfor$
@@ -133,7 +137,7 @@ $if(author-header)$
  \fancyhead[LE]{\sffamily \emph{$author-header$}}
  \fancyhead[RO]{\sffamily \emph{$title$}}
  \cfoot{\thepage}
- $endif$
+$endif$
 
 \usepackage{longtable,booktabs,lscape}
 
@@ -177,7 +181,7 @@ $endif$
 
 % \maketitle
 
-\thispagestyle{empty}
+\thispagestyle{firstpagestyle}
 
 % manual title block:
 \begin{flushleft}
@@ -187,10 +191,12 @@ $for(author)$
 \sffamily \Large $author.name$\vspace{1.2mm} \newline
 \rmfamily \normalsize\emph{$author.affiliation$} \newline
 \rmfamily \footnotesize \url{$author.email$}\newline 
-$if(author.orcid)$\rmfamily  ORCID: \href{$author.orcid$}{$author.orcid$}$endif$\vspace*{5mm}\newline 
+$if(author.orcid)$\rmfamily  ORCID: \href{$author.orcid$}{$author.orcid$}$endif$
+% \vspace*{5mm}
+% \newline 
 $sep$
 $endfor$
-\sffamily \normalsize $date$
+\sffamily \footnotesize Submitted: $date$
 \vspace*{5mm}
 \end{flushleft}
 

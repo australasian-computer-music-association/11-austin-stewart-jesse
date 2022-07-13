@@ -1,7 +1,7 @@
 ---
 title: 'The Multichannel Monophonic Simulation Tool'
 date: '2021-12-05'
-anonymous: 'true'
+anonymous: 'false'
 author: 
     - name: Jesse Austin-Stewart
       affiliation: Massey University
@@ -22,6 +22,10 @@ classoption: 12pt
 reference-section-title: 'References'
 header-includes: |
     \hyphenation{AllRADe-coder}
+year: 2022
+volume: 38
+number: 1
+article-no: 2
 ---
 
 # Introduction
